@@ -1,0 +1,70 @@
+BÀI 1 – Nhận biết thuộc tính & phương thức (DỄ)
+1. Tạo class HocSinh
+2. Khai báo thuộc tính:
+   ten
+   tuoi
+   lop
+3. Tạo phương thức:
+   hocBai() → in ra: "Hoc sinh dang hoc bai"
+4. Trong main:
+   Tạo 1 đối tượng học sinh
+   Gán giá trị cho thuộc tính
+   Gọi phương thức
+Mục tiêu: phân biệt cái có và cái làm
+------------------------------------------------------------
+
+
+BÀI 2 – Phương thức có tham số
+📌 Yêu cầu
+1. Tạo class MayTinh
+2. Tạo phương thức:
+    tinhTong(int a, int b)
+    In ra tổng của 2 số
+3. Gọi phương thức trong main với nhiều giá trị khác nhau
+
+🎯 Mục tiêu: hiểu tham số của phương thức
+------------------------------------------------------------
+
+
+BÀI 3 – Phương thức có giá trị trả về
+1. Tạo class TinhToan
+2. Tạo phương thức:
+    int tinhHieu(int a, int b)
+    Trả về hiệu của a và b
+3. Trong main:
+    Gọi phương thức
+    Lưu kết quả vào biến
+
+4. In kết quả ra màn hình
+
+🎯 Mục tiêu: hiểu return
+------------------------------------------------------------
+
+
+BÀI 4 – Thuộc tính + phương thức cùng dùng
+1. Tạo class NhanVien
+2. Thuộc tính:
+    ten
+    luong
+
+3. Phương thức:
+    hienThiThongTin() → in tên + lương
+
+4. Trong main:
+    Tạo 2 nhân viên khác nhau
+    Gọi phương thức hiển thị
+
+🎯 Mục tiêu: thấy rõ object khác nhau – dữ liệu khác nhau
+------------------------------------------------------------
+
+
+BÀI 5 – Static vs Non-static (QUAN TRỌNG)
+1. Tạo class ThongKe
+2. Thuộc tính static int tongSoNguoi
+3. Phương thức static tangSoNguoi():
+    Mỗi lần gọi → tăng tongSoNguoi
+4. Trong main:
+    Gọi phương thức nhiều lần
+    In tổng số người
+
+🎯 Mục tiêu: hiểu static thuộc về class
