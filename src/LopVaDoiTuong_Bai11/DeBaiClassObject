@@ -1,0 +1,158 @@
+🟢 BÀI 1 – Class & Object cơ bản nhất
+
+Yêu cầu:
+
+1 Tạo class SinhVien
+
+2 Thuộc tính:
+
+    ten
+
+    tuoi
+
+3 Phương thức:
+
+    hienThiThongTin() → in tên và tuổi
+
+4 Trong main:
+
+    Tạo 1 đối tượng SinhVien
+
+    Gán giá trị cho thuộc tính
+
+    Gọi phương thức hiển thị
+
+🎯 Mục tiêu: biết tạo object và gọi phương thức
+------------------------------------------------------------
+
+
+
+🟢 BÀI 2 – Nhiều object khác nhau
+
+Yêu cầu:
+
+1 Dùng lại class SinhVien
+
+2 Trong main:
+
+    Tạo 2 sinh viên khác nhau
+
+    Mỗi sinh viên có tên & tuổi khác nhau
+
+    Gọi hienThiThongTin() cho từng sinh viên
+
+🎯 Mục tiêu: hiểu mỗi object có dữ liệu riêng
+------------------------------------------------------------
+
+
+
+
+🟢 BÀI 3 – Class có phương thức xử lý dữ liệu
+
+Yêu cầu:
+
+1 Tạo class HinhChuNhat
+
+2 Thuộc tính:
+
+    chieuDai
+
+    chieuRong
+
+3 Phương thức:
+
+    tinhDienTich() → in diện tích
+
+4 Trong main:
+
+    Tạo 1 hình chữ nhật
+
+    Gán giá trị
+
+    Gọi phương thức
+
+🎯 Mục tiêu: object + xử lý logic
+------------------------------------------------------------
+
+
+
+
+🟢 BÀI 4 – Constructor (khởi tạo đối tượng)
+
+Yêu cầu:
+
+1 Tạo class NhanVien
+
+2 Thuộc tính:
+
+    ten
+
+    luong
+
+3 Tạo constructor nhận:
+
+    ten
+
+    luong
+
+4 Phương thức:
+
+    hienThiThongTin()
+
+5 Trong main:
+
+    Tạo 2 nhân viên bằng constructor
+
+    Gọi phương thức hiển thị
+
+🎯 Mục tiêu: hiểu constructor dùng để làm gì
+------------------------------------------------------------
+
+
+
+
+🟢 BÀI 5 – Static vs Non-static
+
+Yêu cầu:
+
+1 Tạo class ThongKe
+
+2 Thuộc tính:
+
+    static int tongSoNguoi
+
+3 Phương thức:
+
+    static void tangSoNguoi() → tăng tongSoNguoi
+
+4 Trong main:
+
+    Gọi phương thức nhiều lần
+
+    In tổng số người
+
+🎯 Mục tiêu: hiểu static thuộc về class, không cần object
+------------------------------------------------------------
+
+
+
+
+🟢 BÀI 6 – Class + phương thức có tham số
+
+Yêu cầu:
+
+1 Tạo class MayTinh
+
+2 Phương thức:
+
+    cong(int a, int b) → in tổng
+
+    tru(int a, int b) → in hiệu
+
+3Trong main:
+
+    Tạo object
+
+    Gọi 2 phương thức
+
+🎯 Mục tiêu: object + tham số
