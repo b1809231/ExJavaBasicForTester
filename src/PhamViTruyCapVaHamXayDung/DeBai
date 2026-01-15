@@ -1,0 +1,156 @@
+PHẦN A – BÀI TẬP PHẠM VI TRUY CẬP
+🔹 BÀI 1 – Nhận biết phạm vi truy cập
+
+Yêu cầu:
+
+1 Tạo class DemoAccess
+
+2. Khai báo 4 thuộc tính:
+
+    public String ten
+
+    private int tuoi
+
+    protected String diaChi
+
+    String sdt (default)
+
+3. Trong cùng class, in ra cả 4 thuộc tính
+
+4. Tạo class khác TestAccess cùng package
+
+5. Trong main, thử truy cập từng thuộc tính và ghi chú:
+
+    Thuộc tính nào truy cập được?
+
+    Thuộc tính nào bị lỗi?
+
+🎯 Mục tiêu: hiểu phạm vi truy cập trong cùng package
+------------------------------------------------------------
+
+
+🔹 BÀI 2 – protected khác private thế nào
+
+Yêu cầu:
+
+1. Tạo class Nguoi
+
+    protected String ten
+
+    private int tuoi
+
+2. Tạo class SinhVien kế thừa Nguoi
+
+3. Trong SinhVien, thử truy cập:
+
+    ten
+
+    tuoi
+
+🎯 Mục tiêu: phân biệt protected và private
+------------------------------------------------------------
+
+PHẦN B – BÀI TẬP HÀM XÂY DỰNG (CONSTRUCTOR)
+🔹 BÀI 3 – Constructor không tham số
+
+Yêu cầu:
+
+1. Tạo class SanPham
+
+2. Thuộc tính:
+
+    ten
+
+    gia
+
+3. Tạo constructor không tham số
+
+4. Gán giá trị mặc định cho ten và gia
+
+5. Trong main
+
+    Tạo object
+
+    In ra thông tin
+
+🎯 Mục tiêu: hiểu constructor tự chạy khi new
+------------------------------------------------------------
+
+
+🔹 BÀI 4 – Constructor có tham số
+
+Yêu cầu:
+
+1. Tạo class NhanVien
+
+2. Thuộc tính:
+
+    ten
+
+    luong
+
+3. Tạo constructor có tham số:
+
+    NhanVien(String ten, double luong)
+
+
+4. Trong main
+
+    Tạo 2 nhân viên khác nhau
+
+    In thông tin từng người
+
+🎯 Mục tiêu: truyền dữ liệu vào object khi tạo
+------------------------------------------------------------
+
+
+🔹 BÀI 5 – So sánh constructor & method
+
+Yêu cầu:
+
+1. Tạo class HocSinh
+
+2. Thuộc tính:
+
+    ten
+
+    diem
+
+3. Tạo:
+
+    1 constructor gán giá trị ban đầu
+
+    1 method hienThi()
+
+4. Trong main
+
+    Tạo object
+
+    Gọi method
+
+🎯 Mục tiêu: phân biệt constructor vs method
+------------------------------------------------------------
+
+
+
+🔹 BÀI 6 – static + constructor
+
+Yêu cầu:
+
+1. Tạo class ThongKeUser
+
+2. Thuộc tính:
+
+    static int tongSoUser
+
+3. Trong constructor:
+
+    Mỗi lần tạo object → tăng tongSoUser
+
+4. Trong main
+
+    Tạo nhiều object
+
+    In tổng số user
+
+🎯 Mục tiêu: hiểu static dùng chung cho class
