@@ -1,0 +1,66 @@
+
+------------------------------------------------------------
+
+
+🧩 Bài 3: Phương thức static
+
+Yêu cầu:
+1. Tạo class MathUtils có:
+    phương thức static int sum(int a, int b)
+    phương thức static int multiply(int a, int b)
+2. Gọi các phương thức này trong main mà không cần tạo object.
+👉 Mục tiêu: hiểu cách gọi ClassName.method().
+------------------------------------------------------------
+
+
+🧩 Bài 4: static vs non-static
+
+Yêu cầu:
+1. Tạo class Person:
+    name (non-static)
+    static int population
+2. Mỗi lần tạo Person mới:
+    population++
+3. Viết method:
+    showName() → non-static
+    static showPopulation()
+
+👉 Câu hỏi:
+❓ Vì sao static showPopulation() không gọi trực tiếp được name?
+------------------------------------------------------------
+
+
+🧩 Bài 5: Static Block
+Yêu cầu:
+1. Tạo class Config:
+    static String dbUrl
+2. Dùng static block để gán:
+    dbUrl = "jdbc:mysql://localhost:3306/testdb";
+3. In giá trị dbUrl trong main.
+👉 Mục tiêu: hiểu static block chạy trước main.
+------------------------------------------------------------
+
+
+🧩 Bài 6: Hằng số static final
+Yêu cầu:
+1. Tạo class AppConstants:
+    static final double PI = 3.14159
+    static final int MAX_USER = 100
+2. In ra các giá trị này trong main.
+👉 Mục tiêu: hiểu cách tạo hằng số trong Java.
+------------------------------------------------------------
+
+
+🔥 Bài 7: Tổng hợp (khó hơn)
+Yêu cầu:
+1. Tạo class User:
+    id (int)
+    name (String)
+    static int autoId
+2. Mỗi lần tạo User:
+    id tự động tăng (autoId++)
+    Tạo 5 user và in ra:
+    ID: 1 - Name: A
+    ID: 2 - Name: B
+    ...
+👉 Mục tiêu: áp dụng static vào bài toán thực tế.

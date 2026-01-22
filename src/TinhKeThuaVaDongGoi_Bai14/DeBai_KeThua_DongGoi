@@ -1,0 +1,72 @@
+BÀI TẬP 1 – ĐÓNG GÓI (ENCAPSULATION)
+🎯 Mục tiêu
+Hiểu cách private field + getter/setter
+📌 Yêu cầu
+1. Tạo class TaiKhoan
+2. Thuộc tính (private):
+    soTaiKhoan
+    soDu
+3. Phương thức:
+    getSoTaiKhoan()
+    getSoDu()
+    napTien(int tien)
+    👉 chỉ cho phép nạp tiền > 0
+    rutTien(int tien)
+    👉 chỉ rút khi số dư đủ
+4. Trong main:
+    Tạo 1 tài khoản
+    Nạp tiền, rút tiền
+    In số dư
+------------------------------------------------------------
+
+
+
+📝 BÀI TẬP 2 – KẾ THỪA (INHERITANCE)
+🎯 Mục tiêu
+Hiểu extends và dùng lại code
+📌 Yêu cầu
+1. Tạo class Nguoi
+2. Thuộc tính:
+      ten
+      tuoi
+3. Phương thức:
+    hienThiThongTin()
+4. Tạo class SinhVien kế thừa Nguoi
+5. Thêm thuộc tính:
+    maSV
+6. Thêm phương thức:
+    hienThiSinhVien()
+7. Trong main:
+    Tạo 1 SinhVien
+    Gán giá trị
+    Gọi tất cả phương thức
+------------------------------------------------------------
+
+
+
+📝 BÀI TẬP 3 – KẾ THỪA + ĐÓNG GÓI
+🎯 Mục tiêu
+
+Kết hợp 2 tính OOP
+📌 Yêu cầu
+1. Class NhanVien
+    a. Thuộc tính private:
+        ten
+        luong
+    b. Getter / Setter
+    c. Setter luong chỉ cho > 0
+2. Class NhanVienFullTime kế thừa NhanVien
+    Thêm thuộc tính:
+        phuCap
+    Phương thức:
+        tinhLuongThucLanh()
+3. Trong main:
+    Tạo đối tượng NhanVienFullTime
+    Gán dữ liệu
+    In lương thực lãnh
+🎯 GỢI Ý CÁCH LÀM
+Bài 1: tập trung private + setter kiểm tra
+
+Bài 2: tập trung extends + dùng lại
+
+Bài 3: kết hợp cả 2
