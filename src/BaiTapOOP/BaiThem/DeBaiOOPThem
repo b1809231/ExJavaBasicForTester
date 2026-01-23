@@ -1,0 +1,122 @@
+🟢 BÀI 1 – ĐÓNG GÓI (Encapsulation)
+
+Yêu cầu:
+    Tạo class Student
+
+Thuộc tính:
+    id
+    name
+    score
+    Các thuộc tính để private
+
+    Tạo getter / setter
+    Không cho score < 0 hoặc score > 10
+
+Test:
+    Student s = new Student();
+    s.setName("Nam");
+    s.setScore(9);
+
+    System.out.println(s.getName());
+    System.out.println(s.getScore());
+
+
+👉 Mục tiêu: che giấu dữ liệu + kiểm soát truy cập
+------------------------------------------------------------
+
+
+
+🟢 BÀI 2 – KẾ THỪA (Inheritance)
+
+Yêu cầu:
+Class Person
+    name
+    age
+    method showInfo()
+Class Student kế thừa Person
+    thêm studentId
+Test:
+    Student s = new Student();
+    s.setName("Lan");
+    s.setAge(20);
+    s.setStudentId("SV01");
+
+    s.showInfo();
+
+
+👉 Mục tiêu: tái sử dụng code
+------------------------------------------------------------
+
+
+
+🟢 BÀI 3 – ĐA HÌNH (Polymorphism)
+
+Yêu cầu:
+Class Animal
+    method sound()
+Class con:
+    Dog
+    Cat
+    Override sound()
+Test:
+    Animal a1 = new Dog();
+    Animal a2 = new Cat();
+
+    a1.sound();
+    a2.sound();
+
+
+👉 Mục tiêu: cùng method – hành vi khác nhau
+------------------------------------------------------------
+
+
+
+🟢 BÀI 4 – TRỪU TƯỢNG (Abstraction – abstract)
+
+Yêu cầu:
+    Abstract class Shape
+    abstract method double area()
+Class con:
+    Rectangle
+    Circle
+Test:
+    Shape s1 = new Rectangle(4, 5);
+    Shape s2 = new Circle(3);
+
+    System.out.println(s1.area());
+    System.out.println(s2.area());
+
+
+👉 Mục tiêu: ép class con phải triển khai
+------------------------------------------------------------
+
+
+
+🟡 BÀI 5 – TỔNG HỢP 4 TÍNH CHẤT (SIÊU HAY)
+
+Yêu cầu:
+Abstract class Employee
+    private name
+    abstract double getSalary()
+Class:
+    FullTimeEmployee
+    PartTimeEmployee
+
+    Dùng getter/setter cho name
+Test:
+    Employee e1 = new FullTimeEmployee("An", 10000000);
+    Employee e2 = new PartTimeEmployee("Binh", 80, 50000);
+
+    System.out.println(e1.getSalary());
+    System.out.println(e2.getSalary());
+
+
+👉 Bài này dùng:
+
+Đóng gói ✅
+
+Kế thừa ✅
+
+Trừu tượng ✅
+
+Đa hình ✅

@@ -1,0 +1,109 @@
+🟢 Bài 1 – Đa hình cơ bản (override)
+Yêu cầu:
+Tạo class Animal có method sound()
+Tạo các class con:
+    Dog
+    Cat
+    Ghi đè sound() ở mỗi class
+Test:
+    Animal a1 = new Dog();
+    Animal a2 = new Cat();
+    a1.sound();
+    a2.sound();
+
+👉 Mỗi object phải kêu khác nhau dù cùng kiểu Animal.
+------------------------------------------------------------
+
+
+
+🟢 Bài 2 – Đa hình với mảng object
+Yêu cầu:
+Vẫn dùng Animal
+    Thêm class Cow
+    Tạo mảng Animal[]
+Test:
+    Animal[] animals = {
+        new Dog(),
+        new Cat(),
+        new Cow()
+    };
+    for (Animal a : animals) {
+        a.sound();
+    }
+👉 Không dùng if / instanceof
+------------------------------------------------------------
+
+
+
+🟡 Bài 3 – Đa hình tính toán
+
+Yêu cầu:
+    Class Shape
+    method double area()
+Class con:
+    Rectangle (width, height)
+    Circle (radius)
+Test:
+    Shape s1 = new Rectangle(4, 5);
+    Shape s2 = new Circle(3);
+
+    System.out.println(s1.area());
+    System.out.println(s2.area());
+
+
+👉 Không viết logic tính trong main
+------------------------------------------------------------
+
+
+
+🟡 Bài 4 – Đa hình trong nghiệp vụ (gần thực tế)
+
+Yêu cầu:
+Class Employee
+    method double getSalary()
+Class con:
+    FullTimeEmployee (lương cố định)
+    PartTimeEmployee (lương theo giờ)
+Test:
+    Employee e1 = new FullTimeEmployee(10000000);
+    Employee e2 = new PartTimeEmployee(100, 50000);
+    System.out.println(e1.getSalary());
+    System.out.println(e2.getSalary());
+
+👉 Gọi chung getSalary() nhưng cách tính khác nhau
+------------------------------------------------------------
+
+
+
+🟡 Bài 5 – Đa hình + method xử lý chung
+Yêu cầu:
+Viết method:
+    public static void printSalary(Employee e)
+Test:
+    printSalary(new FullTimeEmployee(12000000));
+    printSalary(new PartTimeEmployee(80, 60000));
+👉 Không kiểm tra kiểu bằng instanceof
+
+🔵 Bài 6 – Đa hình + override nâng cao chút
+Yêu cầu:
+    Class Payment
+    method pay(double amount)
+Class con:
+    CashPayment
+    CreditCardPayment
+    EWalletPayment
+Test:
+    Payment p = new CreditCardPayment();
+    p.pay(500000);
+
+
+👉 Mỗi loại thanh toán in ra cách trả tiền khác nhau
+------------------------------------------------------------
+
+
+🔵 Bài 7 – Bug hay gặp (để hiểu sâu)
+Câu hỏi:
+    Animal a = new Dog();
+    a.sleep();
+sleep() nằm ở Dog nhưng không có trong Animal
+👉 Chạy được không? Vì sao?
