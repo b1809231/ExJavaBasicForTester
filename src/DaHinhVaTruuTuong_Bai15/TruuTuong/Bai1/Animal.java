@@ -1,4 +1,4 @@
-package DaHinhVaTruuTuong_Bai15.TruuTuong;
+package DaHinhVaTruuTuong_Bai15.TruuTuong.Bai1;
 
 abstract class Animal {
 //    🟢 Bài 1 – Abstract class cơ bản
@@ -19,9 +19,7 @@ abstract class Animal {
 //
 //👉 Mục tiêu: hiểu abstract method bắt buộc override
 
-    void sound(){
-        System.out.println("tieng kieu");
-    }
+    abstract void sound();
 
     public void sleep(){
         System.out.println("Animal is sleeping");

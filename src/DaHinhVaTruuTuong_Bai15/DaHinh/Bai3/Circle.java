@@ -1,15 +1,17 @@
-package DaHinhVaTruuTuong_Bai15.TruuTuong.Bai3;
+package DaHinhVaTruuTuong_Bai15.DaHinh.Bai3;
 
-public class Circle extends Shape{
+import DaHinhVaTruuTuong_Bai15.DaHinh.Bai3.Shape;
 
+public class Circle extends Shape {
     private float bk;
 
     public Circle(int bk) {
         this.bk = bk;
     }
 
-    @Override
-    double area() {
+
+    public double area() {
         return Math.pow(bk,2)*Math.PI;
     }
+
 }
