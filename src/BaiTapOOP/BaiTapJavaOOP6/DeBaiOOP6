@@ -1,0 +1,102 @@
+🎯 🧩 BÀI TẬP OOP: QUẢN LÝ NGƯỜI DÙNG (USER SYSTEM)
+📦 MỤC TIÊU
+
+Bạn sẽ xây:
+
+User (người dùng)
+Login / Update thông tin
+Check hợp lệ (validate)
+
+👉 Cái này giống y chang:
+
+đăng nhập app
+sửa profile
+validate input
+📁 1. Package common
+🔹 Class Constants
+public static String appName = "User System";
+🔹 Class BaseTest
+
+Tạo:
+
+startTest(String name)
+endTest(String name)
+
+👉 In:
+
+Start Test: Login
+App: User System
+📁 2. Package models
+🔹 Class User
+🔸 Thuộc tính:
+username (String)
+password (String)
+email (String)
+🔸 Constructor:
+User(String username, String password, String email)
+🔸 Hàm:
+👉 login(String inputUser, String inputPass)
+
+👉 Nếu đúng:
+
+Login success
+
+👉 Sai:
+
+Login failed
+👉 updateEmail(String newEmail)
+
+👉 Nếu email không chứa "@"
+
+Invalid email
+
+👉 Ngược lại:
+
+cập nhật email
+in:
+Update email success
+👉 displayUser()
+
+👉 In:
+
+Username: admin
+Email: admin@gmail.com
+📁 3. Package testcases
+🔹 Class TestUser (extends BaseTest)
+🧪 TC01 – Login thành công
+
+👉 Mô tả:
+
+Tạo user: admin / 123456
+Login đúng
+Expect: success
+🧪 TC02 – Login thất bại
+
+👉 Mô tả:
+
+Sai password
+Expect: failed
+🧪 TC03 – Update email đúng
+
+👉 Mô tả:
+
+Email hợp lệ
+Expect: success
+🧪 TC04 – Update email sai
+
+👉 Mô tả:
+
+Email không có "@"
+Expect: Invalid email
+🧠 CÁI BÀI NÀY GIÚP BẠN:
+✅ Hiểu validate (rất quan trọng khi test)
+email sai
+login sai
+✅ Hiểu logic login
+so sánh username/password
+✅ Giống test case thật 100%
+🔥 BONUS (ăn điểm cao)
+
+👉 Bạn có thể thêm:
+
+❗ Password < 6 ký tự

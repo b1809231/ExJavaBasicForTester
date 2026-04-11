@@ -1,0 +1,70 @@
+🎯 🧩 BÀI TẬP OOP: QUẢN LÝ VÍ TIỀN (WALLET)
+📦 Yêu cầu:
+
+Tạo chương trình quản lý ví đơn giản:
+
+📁 1. Package common
+    🔹 Class Constants
+    public static String currency = "VND";
+    public static boolean isLog = true;
+    🔹 Class BaseTest
+
+    Tạo 2 hàm:
+
+    startTest(String testName)
+    endTest(String testName)
+
+    👉 In:
+
+    Start Test: Deposit
+    Currency: VND
+
+📁 2. Package models
+    🔹 Class Wallet
+    Thuộc tính:
+    walletId (String)
+    ownerName (String)
+    balance (double)
+    Hàm:
+    👉 Constructor
+    Wallet(String walletId, String ownerName, double balance)
+    👉 deposit(double amount)
+    Cộng tiền vào balance
+    👉 withdraw(double amount)
+    Trừ tiền
+    Nếu không đủ tiền → in:
+    Not enough balance
+    👉 displayWallet()
+
+    In:
+
+    WalletID: W01
+    Owner: Summi
+    Balance: 1000 VND
+
+
+📁 3. Package testcases
+🔹 Class TestWallet (extends BaseTest)
+🧪 TC01 - Deposit
+- startTest("Deposit")
+
+- Tạo wallet
+- Deposit 500
+- In thông tin ví
+
+- endTest("Deposit")
+🧪 TC02 - Withdraw
+- startTest("Withdraw")
+
+- Tạo wallet
+- Withdraw 200
+- In thông tin
+
+- endTest("Withdraw")
+🧪 TC03 - Withdraw không đủ tiền
+- startTest("Withdraw Fail")
+
+- Tạo wallet 100
+- Withdraw 500
+
+- endTest("Withdraw Fail")
